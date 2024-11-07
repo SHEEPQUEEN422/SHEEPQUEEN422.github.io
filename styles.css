@@ -25,12 +25,16 @@ body {
   margin-bottom: 10px;
 }
 
+/* Name Styles - Adjusted for Right Alignment */
 .name {
   color: #90bfc5;
   font-weight: 300;
   margin-bottom: 40px;
+  align-self: flex-start; /* Align to the left of the sidebar */
+  margin-left: 40px; /* Shift to the right */
 }
 
+/* Navigation Links */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
@@ -43,6 +47,11 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
+
+.sidebar-link.active {
+  font-weight: bold;
+}
+
 
 .sidebar-link.active {
   font-weight: bold;
