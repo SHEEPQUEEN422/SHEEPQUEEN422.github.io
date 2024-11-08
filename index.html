@@ -112,5 +112,23 @@ Outstanding Cadre, Comprehensive Affairs Department, Student Union              
   </div>
 
   <script src="script.js"></script>
+        <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section");
+    const sidebarLinks = document.querySelectorAll(".sidebar-link");
+
+    function setActiveLink() {
+      let index = sections.length;
+
+      while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+      sidebarLinks.forEach((link) => link.classList.remove("active"));
+      sidebarLinks[index].classList.add("active");
+    }
+
+    window.addEventListener("scroll", setActiveLink);
+  });
+</script>
+
 </body>
 </html>
