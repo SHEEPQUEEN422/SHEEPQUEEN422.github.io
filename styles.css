@@ -51,15 +51,25 @@ body {
   margin-top: 20px;
 }
 
-.social-icons a {
-  color: #bbe1fa;
-  font-size: 1.8em; /* Larger icon size */
-  transition: color 0.3s ease, transform 0.3s ease;
+.icon-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #90bfc5; /* Background color for icons */
+  color: #073b4c; /* Icon color */
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.social-icons a:hover {
-  color: #ffd166; /* Change color on hover */
-  transform: scale(1.2); /* Slightly enlarge on hover */
+.icon-link:hover {
+  background-color: #ffd166; /* Change background color on hover */
+  color: #073b4c; /* Icon color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation Links */
