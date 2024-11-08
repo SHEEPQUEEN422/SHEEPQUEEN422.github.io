@@ -23,12 +23,14 @@ body {
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease;
   z-index: 10;
+  top: 0; /* Make sure sidebar starts at the top */
 }
 
 /* Content Styles */
 .content {
   margin-left: 290px; /* Space for the sidebar */
   padding: 40px;
+  padding-left: 40px; /* Extra padding for content to not overlap sidebar */
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -37,67 +39,4 @@ body {
   padding-bottom: 100px; /* To ensure no content is hidden by bottom of screen */
 }
 
-/* Allowing scrolling for body if needed */
-body {
-  overflow-y: auto; /* Allows scrolling for the entire body */
-}
-
-/* Headings */
-h2 {
-  color: #6a6d65;
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  border-bottom: 3px solid #b5b8b1;
-  padding-bottom: 10px;
-}
-
-h3 {
-  color: #7d827f;
-  font-size: 1.5em;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-/* Paragraphs */
-p {
-  font-weight: 300;
-  font-size: 1.1em;
-  color: #555;
-  line-height: 1.8;
-  max-width: 800px;
-  margin-bottom: 20px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 230px;
-  }
-
-  .content {
-    margin-left: 230px;
-    padding: 20px;
-  }
-
-  .name {
-    font-size: 1.8em;
-  }
-
-  .sidebar-link {
-    font-size: 1em;
-  }
-
-  h2 {
-    font-size: 1.7em;
-  }
-
-  h3 {
-    font-size: 1.3em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-}
+/* Allowing scrolling for body 
