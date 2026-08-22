@@ -6,7 +6,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan" }],
         conference: "Mar 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/music_generation" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/music_generation" },
             { text: "Demo", url: "https://drive.google.com/file/d/18PJz153zofdmdfIRK4FeDz8xF0cWOpF3/view" },
         ],
         summary: "Fine-tuned LLaMA3-8B using QLoRA for melody-to-accompaniment generation. Achieved strong performance: 0.62 loss / 1.85 perplexity.",
@@ -19,7 +19,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan" }],
         conference: "Mar 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/Composer-Classification-and-Next-Sequence-Prediction" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/Composer-Classification-and-Next-Sequence-Prediction" },
         ],
         summary: "Applied PCA and XGBoost on 1,210 MIDI files. LightGBM achieved the highest average validation accuracy of 87.69%.",
         new: true,
@@ -31,7 +31,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan" }],
         conference: "Mar 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/Tritontube" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/Tritontube" },
         ],
         summary: "Scalable video platform using Go, gRPC, and consistent hashing. Features MPEG-DASH playback and distributed storage.",
         new: true,
@@ -43,7 +43,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan" }],
         conference: "Jan 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/2048AI" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/2048AI" },
         ],
         summary: "Developed an AI to play 2048 using the Expectimax algorithm, achieving high scores through strategic planning.",
         new: false,
@@ -55,7 +55,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan" }],
         conference: "Mar 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/251final" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/251final" },
         ],
         summary: "Multi-agent trajectory prediction using Argoverse 2. Achieved best performance with a two-layer LSTM enhanced by neighborhood aggregation.",
         new: false,
@@ -67,7 +67,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan" }],
         conference: "Jan 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/Multi-Crypto-Investment-Portfolios" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/Multi-Crypto-Investment-Portfolios" },
             { text: "Report", url: "https://drive.google.com/file/d/15DpqUIzlJGGnx6x8Zoadb_otJBPP6Ks3/view?usp=sharing" },
         ],
         summary: "Combined LSTM-based return forecasting with Mean-Variance Optimization to optimize multi-crypto investment strategies.",
@@ -80,7 +80,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan", lead: true }, { name: "Yiyang Zheng" }, { name: "Yunzhe Li" }],
         conference: "Jul 2024",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/finetune" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/finetune" },
         ],
         summary: "Fine-tuned Qwen2-72B and Yi-1.5-34B. Implemented consistency fallback strategy reverting to CoT prompting when inconsistencies arise.",
         new: false,
@@ -92,7 +92,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan" }],
         conference: "Jan 2024",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/DLplatform" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/DLplatform" },
         ],
         summary: "Full-stack platform (Django/TensorFlow) supporting training/inference for 17 classic models. Includes intent extraction UI.",
         new: false,
@@ -104,7 +104,7 @@ const papers = [
         authors: [{ name: "Zheng Yuan", lead: true }, { name: "Yiyang Zheng" }, { name: "Pengxiang Li" }],
         conference: "Jan 2024",
         links: [
-            { text: "Git repo", url: "https://github.com/zhengyuan224/3D-Medical-Segmentation-with-Diffusion-Model" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/3D-Medical-Segmentation-with-Diffusion-Model" },
         ],
         summary: "Generated 3D CT scans using Medical Diffusion for few-shot learning. Improved Dice score from 0.81 to 0.85 using U-Net.",
         new: false,
