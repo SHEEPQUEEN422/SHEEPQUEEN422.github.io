@@ -1,3 +1,2 @@
-# SHEEPQUEEN422.github.io
-Inspired by Apple & Gemini
-        
+# SHEEPQUEEN422.github.io — Helen Hui Portfolio
+Inspired by Apple & Gemini design aesthetics.

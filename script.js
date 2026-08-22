@@ -1,114 +1,76 @@
 /* Data Source */
 const papers = [
     {
-        previewSrc: "./assets/depositphotos_318276858-stock-illustration-music-notes-icon-musical-key.jpg",
-        title: "Fine-Tuning LLaMA3-8B with QLoRA for Music",
-        authors: [{ name: "Zheng Yuan" }],
-        conference: "Mar 2025",
+        previewSrc: "./assets/astro.jpg",
+        title: "Reflo — Behavioral AI Scheduling System",
+        authors: [{ name: "Helen Hui", lead: true }],
+        conference: "2025",
         links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/music_generation" },
-            { text: "Demo", url: "https://drive.google.com/file/d/18PJz153zofdmdfIRK4FeDz8xF0cWOpF3/view" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422" },
         ],
-        summary: "Fine-tuned LLaMA3-8B using QLoRA for melody-to-accompaniment generation. Achieved strong performance: 0.62 loss / 1.85 perplexity.",
+        summary: "Designed a 4-layer behavioral model (Trait, Rhythm, State, Context) and 28-item onboarding assessment. Built adaptive recommendation logic combining rule-based scoring and Thompson Sampling.",
         new: true,
-        category: "LLM",
+        category: "AI",
     },
     {
-        previewSrc: "./assets/Beethoven.jpg",
-        title: "Composer Classification & Sequence Prediction",
-        authors: [{ name: "Zheng Yuan" }],
-        conference: "Mar 2025",
+        previewSrc: "./assets/rsrd_preview.mp4",
+        title: "Infinitus AI Voice Agent Personas",
+        authors: [{ name: "Helen Hui", lead: true }],
+        conference: "Jun 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/Composer-Classification-and-Next-Sequence-Prediction" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422" },
         ],
-        summary: "Applied PCA and XGBoost on 1,210 MIDI files. LightGBM achieved the highest average validation accuracy of 87.69%.",
+        summary: "Built 3 GPT-4o & ElevenLabs voice-agent personas and co-designed a within-subject experiment (~50 participants) evaluating conversational style, user engagement, and emotional connection.",
+        new: true,
+        category: "Behavior",
+    },
+    {
+        previewSrc: "./assets/ipc-splash.jpg",
+        title: "Job Scam Classifier",
+        authors: [{ name: "Helen Hui", lead: true }],
+        conference: "2025",
+        links: [
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422" },
+        ],
+        summary: "Led development of fraud-detection models on 18K job postings with engineered TF-IDF features. XGBoost achieved 0.957 AUC and 80% fraud recall.",
         new: true,
         category: "ML",
     },
     {
-        previewSrc: "./assets/triton.png",
-        title: "TritonTube — Distributed Video Platform",
-        authors: [{ name: "Zheng Yuan" }],
-        conference: "Mar 2025",
-        links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/Tritontube" },
-        ],
-        summary: "Scalable video platform using Go, gRPC, and consistent hashing. Features MPEG-DASH playback and distributed storage.",
-        new: true,
-        category: "SWE",
-    },
-    {
-        previewSrc: "./assets/2048.mp4",
-        title: "AI 2048 Player",
-        authors: [{ name: "Zheng Yuan" }],
-        conference: "Jan 2025",
-        links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/2048AI" },
-        ],
-        summary: "Developed an AI to play 2048 using the Expectimax algorithm, achieving high scores through strategic planning.",
-        new: false,
-        category: "RL",
-    },
-    {
-        previewSrc: "./assets/av2_motion_forecasting.png",
-        title: "Trajectory Prediction with LSTM",
-        authors: [{ name: "Zheng Yuan" }],
-        conference: "Mar 2025",
-        links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/251final" },
-        ],
-        summary: "Multi-agent trajectory prediction using Argoverse 2. Achieved best performance with a two-layer LSTM enhanced by neighborhood aggregation.",
-        new: false,
-        category: "DL",
-    },
-    {
-        previewSrc: "./assets/lstmmvo.png",
-        title: "Crypto Portfolio Optimization (LSTM & MPT)",
-        authors: [{ name: "Zheng Yuan" }],
-        conference: "Jan 2025",
-        links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/Multi-Crypto-Investment-Portfolios" },
-            { text: "Report", url: "https://drive.google.com/file/d/15DpqUIzlJGGnx6x8Zoadb_otJBPP6Ks3/view?usp=sharing" },
-        ],
-        summary: "Combined LSTM-based return forecasting with Mean-Variance Optimization to optimize multi-crypto investment strategies.",
-        new: false,
-        category: "DL",
-    },
-    {
         previewSrc: "./assets/showdata.png",
-        title: "LoRA Fine-Tuning Qwen2 & Yi",
-        authors: [{ name: "Zheng Yuan", lead: true }, { name: "Yiyang Zheng" }, { name: "Yunzhe Li" }],
-        conference: "Jul 2024",
+        title: "Statistical Replication & Predictive Modeling",
+        authors: [{ name: "Helen Hui", lead: true }],
+        conference: "2025",
         links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/finetune" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422" },
         ],
-        summary: "Fine-tuned Qwen2-72B and Yi-1.5-34B. Implemented consistency fallback strategy reverting to CoT prompting when inconsistencies arise.",
+        summary: "Replicated survey experiment with 1,009 respondents, built alternative ordinal-logit specifications, and evaluated model performance using AIC, log-likelihood, and marginal effects.",
         new: false,
-        category: "LLM",
+        category: "Analytics",
     },
     {
-        previewSrc: "./assets/dl.mp4",
-        title: "Deep Learning Training Platform",
-        authors: [{ name: "Zheng Yuan" }],
-        conference: "Jan 2024",
+        previewSrc: "./assets/depositphotos_318276858-stock-illustration-music-notes-icon-musical-key.jpg",
+        title: "TikTok Trend & Script Recommendation Tool",
+        authors: [{ name: "Helen Hui", lead: true }],
+        conference: "2025",
         links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/DLplatform" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422" },
         ],
-        summary: "Full-stack platform (Django/TensorFlow) supporting training/inference for 17 classic models. Includes intent extraction UI.",
+        summary: "Integrated Apify TikTok scraping API to analyze trending content at scale and built an AI-assisted workflow converting emerging trends into script recommendations.",
         new: false,
-        category: "DL",
+        category: "AI",
     },
     {
-        previewSrc: "./assets/cancer.mp4",
-        title: "3D Medical Segmentation with Diffusion",
-        authors: [{ name: "Zheng Yuan", lead: true }, { name: "Yiyang Zheng" }, { name: "Pengxiang Li" }],
-        conference: "Jan 2024",
+        previewSrc: "./assets/staxray.png",
+        title: "Behavioral Impression Updating Analysis",
+        authors: [{ name: "Helen Hui", lead: true }],
+        conference: "May 2025",
         links: [
-            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422/3D-Medical-Segmentation-with-Diffusion-Model" },
+            { text: "Git repo", url: "https://github.com/SHEEPQUEEN422" },
         ],
-        summary: "Generated 3D CT scans using Medical Diffusion for few-shot learning. Improved Dice score from 0.81 to 0.85 using U-Net.",
+        summary: "Analyzed 6 large behavioral datasets (1K+ rows) in R using RSA, Pearson correlation, and t-tests, identifying nonverbal signals as key drivers of impression updating.",
         new: false,
-        category: "DL",
+        category: "Behavior",
     },
 ];
 
@@ -214,7 +176,7 @@ function filterCategory(cat) {
 
 function copyEmail(e) {
     e.preventDefault();
-    const email = "yuanzzzhg@gmail.com";
+    const email = "sheepqueen422@gmail.com";
     const btn = document.getElementById("email-btn");
     const btnText = document.getElementById("email-text");
 
