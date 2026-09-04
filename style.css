@@ -775,3 +775,438 @@ footer {
     object-fit: cover;
   }
 }
+/* ============================================================
+   Hero interactive demo
+   ============================================================ */
+.demo-card {
+  margin: 56px auto 0;
+  max-width: 760px;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 18px;
+  padding: 24px 26px 22px;
+  text-align: left;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+.demo-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.demo-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.demo-sub {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.demo-btn {
+  flex-shrink: 0;
+  font-size: 0.86rem;
+  padding: 9px 18px;
+}
+
+.demo-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.demo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+  min-width: 480px;
+}
+
+.demo-table th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0 10px 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.demo-table th em {
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--accent-blue);
+}
+
+.demo-table td {
+  padding: 7px 10px 7px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  transition: opacity 0.35s ease, color 0.35s ease;
+}
+
+.demo-table td.rid {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.demo-table td.status {
+  color: var(--text-secondary);
+  font-size: 0.79rem;
+  white-space: nowrap;
+}
+
+.demo-table tr.row-flagged td {
+  opacity: 0.32;
+  text-decoration: line-through;
+}
+
+.demo-table tr.row-flagged td.status {
+  opacity: 1;
+  text-decoration: none;
+  color: #C7362B;
+}
+
+.demo-table td.cell-bad {
+  color: #C7362B;
+  font-weight: 600;
+}
+
+.demo-stats {
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.demo-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.demo-stat-label {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.demo-stat-value {
+  font-size: 1.45rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+}
+
+.demo-note {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.demo-note a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.demo-note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .demo-card { padding: 20px 16px 18px; margin-top: 40px; }
+  .demo-stats { gap: 22px; }
+}
+
+/* ============================================================
+   Project card visuals — typographic, no stock imagery
+   ============================================================ */
+.card-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  cursor: default;
+  user-select: none;
+}
+
+.card-visual span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.accent-a { background: linear-gradient(135deg, #0071E3 0%, #4B9DF5 100%); }
+.accent-b { background: linear-gradient(135deg, #1D3557 0%, #457B9D 100%); }
+.accent-c { background: linear-gradient(135deg, #2A6F5F 0%, #4FA88B 100%); }
+.accent-d { background: linear-gradient(135deg, #6B4FA8 0%, #A17BD6 100%); }
+.accent-e { background: linear-gradient(135deg, #8A5A44 0%, #C08A6E 100%); }
+.accent-f { background: linear-gradient(135deg, #34506B 0%, #6E8FA8 100%); }
+.accent-g { background: linear-gradient(135deg, #A8452F 0%, #D4795F 100%); }
+.accent-h { background: linear-gradient(135deg, #4A4A4F 0%, #85858B 100%); }
+
+.card-meta {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin: 2px 0 8px;
+}
+
+.card-note {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* ============================================================
+   Editorial palette — overrides the earlier Apple-derived one
+   ============================================================ */
+:root {
+  --bg-color: #FBF9F6;
+  --card-bg: #FFFFFF;
+  --text-primary: #17140F;
+  --text-secondary: #6E655A;
+  --accent-blue: #1F4E5F;
+  --accent-green: #3E6B4F;
+  --rule: rgba(23, 20, 15, 0.10);
+  --rule-soft: rgba(23, 20, 15, 0.055);
+  --glow: 31, 78, 95;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #131211;
+    --card-bg: #1B1A18;
+    --text-primary: #F0EDE8;
+    --text-secondary: #A29A8F;
+    --accent-blue: #86B8C8;
+    --accent-green: #7FB08F;
+    --rule: rgba(255, 255, 255, 0.11);
+    --rule-soft: rgba(255, 255, 255, 0.06);
+    --glow: 134, 184, 200;
+  }
+  .demo-card, .project-card, .skill-card, .about-card { border-color: var(--rule); }
+  .demo-table th { border-bottom-color: var(--rule); }
+  .demo-table td { border-bottom-color: var(--rule-soft); }
+  .demo-stats { border-top-color: var(--rule-soft); }
+  .card-cover { filter: invert(1) hue-rotate(180deg) brightness(0.92); }
+  .profile-photo, .photo-grid img { filter: brightness(0.92); }
+}
+
+/* ============================================================
+   Display type — serif for headlines, Inter stays for body
+   ============================================================ */
+.hero h1,
+.section-title,
+.about-content h2 {
+  font-family: "Instrument Serif", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 6.4vw, 4.6rem);
+  line-height: 1.06;
+}
+
+.section-title,
+.about-content h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.3rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   Ambient background — grain + a light that follows the cursor
+   ============================================================ */
+#ambient {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(560px circle at var(--mx, 50%) var(--my, 22%),
+      rgba(var(--glow), 0.085), transparent 62%);
+  transition: background 220ms ease-out;
+}
+
+#grain {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.028;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ambient { transition: none; background: none; }
+}
+
+@media (hover: none) {
+  #ambient { background: none; }
+}
+
+/* ============================================================
+   Card cover images (rendered paper title blocks)
+   ============================================================ */
+.card-cover {
+  object-fit: cover;
+  object-position: center 34%;
+  background: #fff;
+  cursor: zoom-in;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+/* Compressed "earlier" experience rows */
+.exp-earlier {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--rule-soft);
+  font-size: 0.93rem;
+}
+
+.exp-earlier:last-child { border-bottom: none; }
+
+.exp-earlier .ee-date {
+  flex: 0 0 150px;
+  color: var(--text-secondary);
+  font-size: 0.83rem;
+}
+
+.exp-earlier .ee-role strong { font-weight: 600; }
+
+.exp-earlier .ee-role span { color: var(--text-secondary); }
+
+.earlier-head {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin: 42px 0 6px;
+}
+
+@media (max-width: 640px) {
+  .exp-earlier { flex-direction: column; gap: 3px; }
+  .exp-earlier .ee-date { flex: none; }
+}
+
+/* ============================================================
+   Dark-mode repairs for hardcoded light values in the base sheet
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+
+  /* h1 uses a black→grey gradient clipped to text; restore it for dark */
+  .hero h1 {
+    background: linear-gradient(135deg, #FFFFFF 6%, #E4DFD7 48%, #9A9086 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  nav {
+    background: rgba(19, 18, 17, 0.82) !important;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .btn {
+    background: #232120;
+    color: var(--text-primary);
+    border: 1px solid var(--rule);
+    box-shadow: none;
+  }
+
+  .btn.primary {
+    background: var(--text-primary);
+    color: #131211;
+  }
+
+  .btn.success {
+    color: #131211 !important;
+  }
+
+  #category-filter button.active {
+    background: #2B2926;
+    color: var(--text-primary);
+    box-shadow: none;
+  }
+
+  .demo-card,
+  .project-card,
+  .skill-card,
+  .about-card {
+    background: var(--card-bg);
+    box-shadow: none;
+  }
+
+  .demo-table tr.row-flagged td.status,
+  .demo-table td.cell-bad {
+    color: #E0806F;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+  }
+}
+
+/* ============================================================
+   Loupe — magnifies the rendered paper covers only
+   ============================================================ */
+#loupe {
+  position: fixed;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0;
+  transform: scale(0.86);
+  transition: opacity 140ms ease, transform 160ms cubic-bezier(.2, .8, .3, 1);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: 1px solid rgba(23, 20, 15, 0.18);
+  box-shadow:
+    0 10px 32px rgba(23, 20, 15, 0.20),
+    inset 0 0 0 5px rgba(255, 255, 255, 0.85);
+}
+
+#loupe.on {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card-cover { cursor: none; }
+
+@media (prefers-color-scheme: dark) {
+  #loupe {
+    filter: invert(1) hue-rotate(180deg) brightness(0.92);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+}
+
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  #loupe { display: none; }
+  .card-cover { cursor: zoom-in; }
+}

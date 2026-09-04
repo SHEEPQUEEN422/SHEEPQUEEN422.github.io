@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>Helen Hui | Computational Social Science & Product Analytics</title>
+  <title>Helen Hui | Analyst — Measurement, Experimentation, Product Analytics</title>
 
   <meta name="description"
-    content="M.S. in Computational Social Science at UC San Diego (Fellowship Awarded). Specializing in product analytics, user research, AI workflows, and growth operations." />
-  <meta property="og:title" content="Helen Hui - Portfolio" />
+    content="Analyst with an M.S. in Computational Social Science (UC San Diego). SQL, Python, R — measurement design, validity screening, experimentation, and product analytics." />
+  <meta property="og:title" content="Helen Hui — Analyst" />
   <meta property="og:description"
-    content="Computational Social Scientist & Product Analytics Specialist based in Cupertino / San Diego." />
+    content="I find out whether the number is real. Measurement design, validity screening, and analysis that holds up." />
   <meta property="og:image" content="./assets/self_portrait.jpg" />
   <meta property="og:type" content="website" />
 
@@ -18,12 +18,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+  <div id="ambient"></div>
+  <div id="grain"></div>
+  <div id="loupe"></div>
 
   <nav>
     <div class="nav-container">
@@ -31,7 +35,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Work</a>
         <a href="#skills">Skills</a>
         <a href="#misc">Photos</a>
       </div>
@@ -41,9 +45,9 @@
   <div class="container">
 
     <section class="hero reveal">
-      <h1>Data-Driven Insights.<br>Human-Centered AI.</h1>
-      <p>M.S. in Computational Social Science at UC San Diego.<br>Specializing in Product Analytics, User Research & AI
-        Workflows.</p>
+      <h1>I find out whether<br>the number is real.</h1>
+      <p>Analyst with an M.S. in Computational Social Science (UC San Diego).<br>
+        SQL · Python · R — measurement design, validity screening, and findings that hold up.</p>
 
       <div class="social-links">
         <a href="#" id="email-btn" onclick="copyEmail(event)" class="btn primary">
@@ -54,29 +58,65 @@
         <a href="https://drive.google.com/file/d/1hsrQgLM6el3NnsuMqIHEBnv_9qzIzzYP/view?usp=sharing" target="_blank"
           class="btn">Resume</a>
       </div>
+
+      <!-- Interactive: what validity screening actually does -->
+      <div class="demo-card">
+        <div class="demo-head">
+          <div>
+            <div class="demo-title">Try it: eight survey responses</div>
+            <div class="demo-sub">Item 3 is an attention check — it instructs respondents to answer 2.</div>
+          </div>
+          <button id="demo-btn" class="btn primary demo-btn" onclick="toggleScreen()">Run validity screen</button>
+        </div>
+
+        <div class="demo-table-wrap">
+          <table class="demo-table" id="demo-table"></table>
+        </div>
+
+        <div class="demo-stats">
+          <div class="demo-stat"><span class="demo-stat-label">Responses used</span><span class="demo-stat-value"
+              id="stat-n">8</span></div>
+          <div class="demo-stat"><span class="demo-stat-label">Mean score</span><span class="demo-stat-value"
+              id="stat-mean">3.45</span></div>
+          <div class="demo-stat"><span class="demo-stat-label">Flagged</span><span class="demo-stat-value"
+              id="stat-flag">—</span></div>
+        </div>
+
+        <div class="demo-note" id="demo-note">Every response is currently included, and the average looks fine.</div>
+      </div>
     </section>
 
     <section id="about" class="reveal">
       <div class="about-card">
         <div class="about-content">
-          <h2>About Me</h2>
+          <h2>About</h2>
           <p>
-            I am a Master's student in Computational Social Science (Fellowship Awarded) at <a
-              href="https://www.ucsd.edu/" target="_blank">UC San Diego</a>.
-            Previously, I received my LL.B. in Sociology from <a href="https://www.shu.edu.cn/" target="_blank">Shanghai
-              University</a>.
+            I'm an analyst with an M.S. in Computational Social Science from
+            <a href="https://www.ucsd.edu/" target="_blank">UC San Diego</a> (fellowship awarded)
+            and an LL.B. in Sociology from
+            <a href="https://www.shu.edu.cn/" target="_blank">Shanghai University</a>.
+            I work in SQL, Python, and R.
           </p>
           <br>
           <p>
-            My background combines <strong>Product Analytics</strong>, <strong>User Research</strong>, <strong>AI
-              Workflows</strong>, and <strong>Growth Operations</strong>.
-            I excel in SQL, Python, R, and statistical modeling, translating complex user behaviors and data into
-            actionable product features and growth strategies.
+            Most of my useful work has looked like this. At Sunway Expo, reported engagement across three
+            separate source systems had quietly stopped reconciling with the downstream records of who
+            actually became a qualified lead. Nobody had noticed, because each system was internally
+            consistent with itself. I traced the discrepancy to where it started and corrected the
+            reporting — and the corrected numbers changed where we invested. The top channel by engagement
+            was not the top channel by lead quality.
           </p>
           <br>
           <p>
-            I am passionate about bridging data science and product design—from building behavioral AI recommendation
-            engines to conducting rigorous A/B experiments and designing conversational voice-agent personas.
+            That's the part of analysis I care about: not producing a number faster, but establishing
+            whether the number deserves to be believed. I build that in — <a
+              href="https://github.com/SHEEPQUEEN422/Reflo" target="_blank">Reflo</a>, a working assessment system I
+            designed and built, screens every response for validity before it scores anything.
+          </p>
+          <br>
+          <p>
+            I'm looking for analyst and research roles where the measurement itself is part of the job:
+            product and growth analytics, quantitative UX research, and consumer insights.
           </p>
         </div>
         <img src="./assets/self_portrait.jpg" alt="Helen Hui" class="profile-photo" />
@@ -84,7 +124,7 @@
     </section>
 
     <section id="experience" class="reveal">
-      <h2 class="section-title">Work Experience</h2>
+      <h2 class="section-title">Experience</h2>
       <div class="experience-list">
 
         <div class="exp-item reveal">
@@ -92,40 +132,15 @@
           <div class="exp-details">
             <h3>Marketing Specialist <span>@ Think Academy US</span></h3>
             <div class="exp-desc">
-              Managed prospective-parent follow-up across the lead-to-consultation funnel (~60–70% consultation
-              attendance; ~40% consultation-to-conversion), identified recurring workflow friction, and prototyped AI
-              tools for scheduling and lead tracking.
+              Defined the performance metrics for the video content channel, then built a cost-per-acquisition
+              model comparing acquisition cost across channels. It isolated production overhead as the reason
+              one channel was structurally more expensive per qualified lead, and leadership acted on the
+              reallocation. The conclusion worked against my own line; I reported it anyway.
               <br><br>
-              Produced and tested 43 short-form videos averaging 1K+ views, with the top-performing video generating 30+
-              inbound leads; used content performance signals to refine topic selection and video formats.
-            </div>
-          </div>
-        </div>
-
-        <div class="exp-item reveal">
-          <div class="exp-date">May 2026 – Jun 2026</div>
-          <div class="exp-details">
-            <h3>Product & Growth Cofounder <span>@ Loreli AI</span></h3>
-            <div class="exp-desc">
-              Conducted competitive and market analysis to inform product positioning and differentiation for an
-              early-stage AI app; partnered directly with the founder on product testing and UI/UX iterations.
-              <br><br>
-              Produced and tested 24 short-form videos, generating 6.7K+ organic views and 162 likes, using performance
-              signals to refine messaging and target audience positioning.
-            </div>
-          </div>
-        </div>
-
-        <div class="exp-item reveal">
-          <div class="exp-date">May 2025 – May 2026</div>
-          <div class="exp-details">
-            <h3>Marketing & Growth Lead <span>@ Settlyfe</span></h3>
-            <div class="exp-desc">
-              Conducted ~16 user interviews and a ~50-response survey to identify priority housing needs; partnered with
-              the Tech Lead on app/website testing and UI iterations.
-              <br><br>
-              Analyzed 20+ PropTech competitors across features, target users, pricing, business models, and user
-              journeys, informing a shift toward a more focused initial product scope.
+              Owned recurring stage-level conversion reporting across a multi-step funnel (~60–70% consultation
+              attendance, ~40% consultation-to-conversion), monitoring each stage against expected ranges.
+              Produced and tested 43 short-form videos, and prototyped internal AI tooling for scheduling and
+              lead tracking after identifying which manual steps were consuming the team's time.
             </div>
           </div>
         </div>
@@ -133,14 +148,30 @@
         <div class="exp-item reveal">
           <div class="exp-date">Jun 2025 – May 2026</div>
           <div class="exp-details">
-            <h3>Marketing & Growth Specialist <span>@ Sunway Expo</span></h3>
+            <h3>Marketing &amp; Growth Specialist <span>@ Sunway Expo</span></h3>
             <div class="exp-desc">
-              Ran iterative campaign tests across topics, formats, posting times, and promotional tactics, growing
-              social audience from ~600 to 3,000+ in 3 months.
+              Found that reported engagement across three disconnected source systems was not reconciling with
+              downstream qualified-lead records, traced the discrepancy to its origin, and corrected the
+              reporting. The top channel by engagement was not the top channel by lead quality, and effort
+              moved toward higher-intent channels.
               <br><br>
-              Analyzed cross-platform performance across RedNote, TikTok, and LinkedIn; identified that high TikTok
-              engagement did not translate into qualified leads and shifted strategy toward higher-intent content
-              channels.
+              Designed and ran channel experiments across topic, format, posting time, and promotional tactic,
+              growing the audience from ~600 to 3,000+ in three months.
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-date">May 2025 – May 2026</div>
+          <div class="exp-details">
+            <h3>Marketing &amp; Growth Lead <span>@ Settlyfe</span></h3>
+            <div class="exp-desc">
+              Interface between users and engineering at an early-stage B2B/B2C housing platform: ran ~16
+              stakeholder interviews and fielded a ~50-response survey, then worked with the Tech Lead to turn
+              ambiguous input into a defined, prioritized scope and shipped UI iterations against it.
+              <br><br>
+              Built a competitive analysis of 20+ PropTech companies across features, target users, pricing,
+              and business models, which drove a decision to narrow the initial product scope.
             </div>
           </div>
         </div>
@@ -148,14 +179,15 @@
         <div class="exp-item reveal">
           <div class="exp-date">Sep 2024 – Jun 2025</div>
           <div class="exp-details">
-            <h3>Capstone Project Collaborator <span>@ Infinitus Systems, Inc.</span></h3>
+            <h3>Capstone Research Collaborator <span>@ Infinitus Systems, Inc.</span></h3>
             <div class="exp-desc">
-              Built 3 GPT-4o/ElevenLabs voice-agent personas and co-designed a within-subject experiment with ~50
-              participants to evaluate how conversational style affected user engagement and emotional connection.
+              Contributed to a within-subject controlled study (n≈50) evaluating how conversational style
+              affected engagement and emotional connection with a voice AI product. I built two of the three
+              standardized GPT-4o / ElevenLabs conditions used to isolate the manipulated variable.
               <br><br>
-              Co-cleaned and analyzed survey data using two-way ANOVA, Tukey HSD, effect sizes, and sentiment/thematic
-              analysis; found the Friendly persona significantly outperformed Moderate (+0.69) and Professional (+0.45),
-              informing conversational-design insights.
+              Worked with the team through the analysis — two-way ANOVA, Tukey HSD, and effect sizes (+0.69 and
+              +0.45 over comparison conditions) — and contributed to presenting the findings, with their stated
+              limitations, to a cross-functional audience.
             </div>
           </div>
         </div>
@@ -163,13 +195,12 @@
         <div class="exp-item reveal">
           <div class="exp-date">Feb 2025 – May 2025</div>
           <div class="exp-details">
-            <h3>Research Assistant <span>@ IMPACT Lab (UCSD)</span></h3>
+            <h3>Research Assistant <span>@ IMPACT Lab, UC San Diego</span></h3>
             <div class="exp-desc">
-              Analyzed 6 large behavioral datasets with 1K+ rows each in R, applying RSA, Pearson correlation, binomial
-              tests, and two-sided t-tests to model changes in trait impressions.
-              <br><br>
-              Visualized relationships across behavioral and multimodal features, identifying nonverbal signals as key
-              drivers of impression updating.
+              Analyzed 6 behavioral datasets (1,000+ observations each) in R using representational similarity
+              analysis, Pearson correlation, binomial tests, and two-sided t-tests to model how trait
+              impressions shift across multimodal behavioral and nonverbal features. Identified nonverbal
+              signals as the primary drivers of impression updating.
             </div>
           </div>
         </div>
@@ -179,54 +210,76 @@
           <div class="exp-details">
             <h3>Marketing Analyst Intern <span>@ Perforte</span></h3>
             <div class="exp-desc">
-              Automated a ~2-hour Excel/VLOOKUP reporting workflow with Python, reducing processing time by 30+ minutes
-              and generating standardized Excel dashboards.
+              Replaced a ~2-hour manual Excel/VLOOKUP reporting process with an automated Python workflow
+              producing standardized recurring output.
               <br><br>
-              Analyzed sportswear market and sales data to identify high-potential product categories and emerging
-              demand trends, supporting market strategy recommendations.
+              Analyzed sportswear market and sales data and authored industry reports with strategic
+              recommendations for clients including Nike and Decathlon.
             </div>
           </div>
         </div>
 
       </div>
+
+      <div class="earlier-head">Earlier</div>
+      <div class="exp-earlier">
+        <div class="ee-date">Jul 2022 – Sep 2022</div>
+        <div class="ee-role"><strong>ESG Marketing Operations Intern</strong>
+          <span>· PricewaterhouseCoopers, Shanghai</span><br>
+          <span>Data processing, business documentation, and multi-platform content operations for ESG
+            events and publications.</span>
+        </div>
+      </div>
+      <div class="exp-earlier">
+        <div class="ee-date">Mar 2024 – May 2024</div>
+        <div class="ee-role"><strong>Visual Merchandising Intern</strong>
+          <span>· Michael Kors, San Diego, CA</span><br>
+          <span>Supported visual merchandising and retail presentation for seasonal campaigns, and adapted promotional assets in Adobe Creative Suite against campaign themes and brand guidelines.</span>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="reveal">
-      <h2 class="section-title">Selected Projects</h2>
+      <h2 class="section-title">Selected Work</h2>
 
       <div id="category-filter">
-        <button onclick="filterCategory('ALL')" class="active">All</button>
-        <button onclick="filterCategory('AI')">AI & LLM</button>
-        <button onclick="filterCategory('Analytics')">Analytics & Experimentation</button>
-        <button onclick="filterCategory('Behavior')">Behavioral Science</button>
-        <button onclick="filterCategory('ML')">Machine Learning</button>
+        <button onclick="filterCategory('ALL', event)" class="active">All</button>
+        <button onclick="filterCategory('Measurement', event)">Measurement</button>
+        <button onclick="filterCategory('Experiment', event)">Experiments</button>
+        <button onclick="filterCategory('ML', event)">Modeling</button>
+        <button onclick="filterCategory('Product', event)">Product</button>
       </div>
 
       <div id="paper-list" class="projects-grid"></div>
     </section>
 
     <section id="skills" class="reveal">
-      <h2 class="section-title">Technical & Professional Skills</h2>
+      <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-icon">📊</div>
-          <h3>Analytics & Experimentation</h3>
-          <p>SQL, Python, R, SPSS, A/B Testing, Statistical Modeling, Funnel Analysis, Data Visualization</p>
+          <div class="skill-icon">📐</div>
+          <h3>Measurement &amp; Validity</h3>
+          <p>Instrument and questionnaire design · sampling · attention checks, straight-lining and
+            extreme-response screening · robust z bounds · drift detection · cross-source reconciliation ·
+            data dictionaries</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">💡</div>
-          <h3>Product & Research</h3>
-          <p>Product Metrics, User Research, Experiment Design, Growth Analytics, Requirements Analysis</p>
+          <div class="skill-icon">📊</div>
+          <h3>Statistics &amp; Experimentation</h3>
+          <p>Within-subject and A/B design · ANOVA and post-hoc testing · effect sizes · significance testing ·
+            regression (linear, logistic, ordinal) · model comparison under cross-validation · segmentation</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Programming &amp; Data</h3>
+          <p>SQL (PostgreSQL) — joins, CTEs, window functions · Python (pandas, NumPy, scikit-learn) · R ·
+            TypeScript / Next.js · Supabase · Power BI · Excel (Power Query) · Git</p>
         </div>
         <div class="skill-card">
           <div class="skill-icon">🤖</div>
-          <h3>AI & Technical</h3>
-          <p>Machine Learning, LLM Workflows, API Integration, JavaScript, TypeScript, Supabase</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">🚀</div>
-          <h3>Business & Growth</h3>
-          <p>GTM Strategy, Market Research, HubSpot, Google Analytics, Content Strategy</p>
+          <h3>AI in the Workflow</h3>
+          <p>LLM application development (GPT-4o, ElevenLabs, OpenAI API) · prompt design ·
+            agent and workflow automation · AI-assisted analysis, with independent verification of output</p>
         </div>
       </div>
     </section>
@@ -241,7 +294,7 @@
     </section>
 
     <footer>
-      <p>Designed by Helen Hui. Inspired by Apple & Gemini.</p>
+      <p>Designed by Helen Hui.</p>
     </footer>
 
   </div>
