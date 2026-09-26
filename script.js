@@ -61,19 +61,8 @@ const papers = [
         category: "Experiment",
     },
     {
-        label: "Settlyfe",
-        accent: "f",
-        title: "Settlyfe — Requirements from Ambiguous User Input",
-        conference: "2025–2026 · cross-platform mobile app",
-        links: [],
-        note: "Source is in a private company repository.",
-        summary: "Ran ~16 stakeholder interviews and a ~50-response survey on housing needs, then worked with the Tech Lead to convert conflicting qualitative input into a defined, prioritized scope, and shipped UI iterations against it. A competitive analysis of 20+ PropTech products across features, users, pricing, and business model drove the decision to narrow the initial scope.",
-        new: false,
-        category: "Product",
-    },
-    {
         label: "SparkMint",
-        accent: "g",
+        accent: "f",
         title: "SparkMint — TikTok Content Intelligence Platform",
         conference: "2026 · TypeScript, Next.js, React, SSE",
         links: [],
@@ -83,7 +72,7 @@ const papers = [
     },
     {
         label: "DMV Bot",
-        accent: "h",
+        accent: "g",
         title: "DMV Appointment Automation Bot",
         conference: "2025 · Python, Playwright",
         links: [
